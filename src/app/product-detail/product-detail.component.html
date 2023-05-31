@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+<!--             <h1 class="mt-3">Product Management Application - <span id="heading">A B C</span> Store</h1> -->
+            <h3 class="mt-3">View Your Product</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Product View -->
+<div id="view">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <!-- Product Image -->
+                <img class="w-100" height="400px" [src]="item.thumbnail" alt="">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <ul class="list-group border border-3 justify-content-center mt-2">
+                    <li class="list-group-item">Id : <span class="fw-bolder">{{item.id}}</span></li>
+                    <li class="list-group-item">Product Name : <span class="fw-bolder">{{item.title}}</span></li>
+                    <li class="list-group-item">Description : <span class="fw-bolder">{{item.description}}</span></li>
+                    <li class="list-group-item">Brand : <span class="fw-bolder">{{item.brand}}</span></li>
+                    <li class="list-group-item">Category : <span class="fw-bolder">{{item.category}}</span></li>
+                    <li class="list-group-item">Price : <span class="fw-bolder">{{item.price}}</span></li>
+                    <li class="list-group-item">Discount Percentage : <span class="fw-bolder">{{item.discountPercentage}}</span></li>
+                    <li class="list-group-item">Rating : <span class="fw-bolder">{{item.rating}}</span></li>
+                    <li class="list-group-item">Stock Number : <span class="fw-bolder">{{item.stock}}</span></li>
+                   <!--  <li class="list-group-item"></li> -->
+                  </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
